@@ -1,37 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background-image: url(https://plus.unsplash.com/premium_photo-1670271544153-dd9933f0f119?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Ymx1ZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D);
+            background-size: cover;
+            min-height: 90vh;
+        }
+
+        .parent-container {
+            background-color: white;
+            width: 30%;
+            text-align: center;
+            padding: 20px;
+            font-family: sans-serif;
+            margin: 5% auto;
+        }
+
+        .form-field {
+            margin: 12px 0;
+        }
+
+        .form-field input,
+        textarea,
+        select {
+            padding: 10px;
+            width: 80%;
+            font-size: 0.9rem;
+            border: 1px solid Urgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+        }
+
+        .form-field input,
+        textarea,
+        select {
+            padding: 1epx;
+            width: 80%;
+            font-size: 0.9rem;
+            border: 1px solid rgba(e, 0, 0, 0.5);
+            border-radius: 5px;
+        }
+
+        .form-group {
+            width: 85%;
+            margin: auto;
+            text-align: left;
+            font-size: 0.8rem;
+        }
+
+        .btn-grad {
+            background-image: linear-gradient(to right, #6107aa 0%, #4007aa 51%, #5607aa);
+            margin: 15px auto;
+            width: 85%;
+            padding: 12px5;
+            text-transform: uppercase;
+            background-size: 200% auto;
+            color: Wwhite;
+            border-radius: 10px;
+            display: block;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-grad:hover {
+            background-position: right center;
+        }
+    </style>
 </head>
+
 <body>
-    <form action="./login.html">
-        <input type="text" placeholder="enter name" name="name" required/><br/>
-        <input type="email" placeholder="enter email" name="email" required/><br/>
-        <input type="password" placeholder="enter password" name="password" required/><br/>
-        <input type="confirm password" placeholder="enter confirm password" name="confirm password" required/><br/>
-        <input type="phone number" placeholder="enter phone number" name="phone number" required/>
+    <form class="parent-container" action="./login.html">
+        <h2>REGISTRATION PAGE</h2>
+        <div class="form-field">
+            <input type="text" placeholder="enter name" name="name" required />
+        </div>
+        <div class="form-field">
+            <input type="email" placeholder="enter email" name="email" required />
+        </div>
+        <div class="form-field">
+            <input type=" password" placeholder="enter password" name="password" required />
+        </div>
+        <div class="form-field">
+            <input type="confirm password" placeholder="enter confirm password" name="confirm password" required />
+        </div>
+        <div class="form-field">
+            <input type="phone number" placeholder="enter phone number" name="phone number" required />
+        </div>
         <div>
-            <input type="radio"  name="gender" id="gmale">
+            <input type="radio" name="gender" id="gmale">
             <label for="gmale">Male</label>
             <input type="radio" id="gfemale" name="gender">
             <label for="gfemale">Female</label>
         </div>
-        <div>
-            <input type="checkbox" value="10th"/> 10th
-            <input type="checkbox" value="Inter"/> Inter
-            <input type="checkbox" value="Diploma"/> Diploma
-            <input type="checkbox" value="B.tech"/> B.tech
+        <div class="form-group">
+            <label>Education</label>
+            <input type="checkbox" value="10th" /> 10th
+            <input type="checkbox" value="Inter" /> Inter
+            <input type="checkbox" value="Diploma" /> Diploma
+            <input type="checkbox" value="B.tech" /> B.tech
         </div>
-        <select>
-            <option value="">select your city</option>
-            <option value="Guntur">Guntur</option>
-            <option value="Vijayawada">Vijayawada</option>
-            <option value="vizag">Vizag</option>
-        </select><br/>
-        <input type="address" placeholder="enter your address" name="address"/><br/><br/>
-        <button>Register</button>
+        <div class="form-field">
+            <select>
+                <option value="">select your city</option>
+                <option value="Guntur">Guntur</option>
+                <option value="Vijayawada">Vijayawada</option>
+                <option value="vizag">Vizag</option>
+            </select>
+        </div>
+        <div class="form-field">
+            <input type="date" required>
+        </div>
+        <div class="form-field">
+            <input type="address" placeholder="enter your address" name="address" />
+        </div>
+        <button class="btn-grad">REGISTER</button>
     </form>
 </body>
+
 </html>

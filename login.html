@@ -5,15 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-image: url(https://e1.pxfuel.com/desktop-wallpaper/721/613/desktop-wallpaper-abstract-login-page.jpg);
+            background-size:cover;
+            min-height: 90vh;
+        }
+        .parent-container{
+            background-color: blue;
+            width: 30%;
+            text-align: center;
+            padding: 20px;
+            font-family: sans-serif;
+            margin: 5% auto;
+            border-radius: 10px;
+        }
+        .parent-container a{
+            color: aliceblue;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+        .form-field {
+            margin: 15px 0;
+        }
+        .form-field input{
+            padding: 10px;
+            width: 80%;
+            font-size: 0.9rem;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-grad.hover {
+            background-position: right center;
+        }
+        .extra-links {
+            margin-top: 10px;
+            font-size: 0.8rem;
+        }
+    </style>
 </head>
 
 <body>
-    <form action="./biography.html">
-        <input type="email" placeholder="enter email" name="email" required/><br/>
-        <input type="password" placeholder="enter your password" name="password" required/><br/>
-        <a href="#">forgot password</a>
-        <p>don't have an account? <a href="./index.html">Register</a></p>
-        <button>Login</button>
+    <form class="parent-container" action="./biography.html">
+        <h3>LOGIN</h3>
+        <div class="form-field">
+            <input type="password" placeholder="enter password" name="password" required>
+        </div>
+        <div class="form-field">
+            <input type="email" placeholder="enter email" name="email" required>
+        </div>
+        <button class="btn-grad">LOGIN</button>
+        <div class="extra-links">
+            <a href="#">forgot password</a>
+        </div>
+        <div class="extra-links">
+            <p>don't have an account? <a href="./index.html">Register</a></p>
+        </div>
     </form>
 </body>
 
